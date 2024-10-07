@@ -9,11 +9,12 @@ export default function Create() {
   const [preparationTime, setPreparationTime] = useState('');
   const [cookingTime, setCookingTime] = useState('');
   const [savings, setSavings] = useState('');
+  const [isPending, setIsPending] = useState(false)
   
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({
+    const recipes = {
       recipeName,
       recipePicture,
       ingredients,
@@ -22,7 +23,19 @@ export default function Create() {
       preparationTime,
       cookingTime,
       savings
-    });
+    };
+
+    setIsPending(true);
+
+    fetch('http://localhost:3000/recipes', {
+      method: 'POST',
+      headers: {"content-Type": "application/json"},
+      body: JSON.stringify({recipes})
+    }).then(() => {
+      console.log('new recipe added');
+      setIsPending(false);
+    })
+
   };
 
   const handleCategoryChange = (e) => {
@@ -92,7 +105,8 @@ export default function Create() {
           onChange={(e) => setSavings(e.target.value)}
         />
 
-        <button onClick={handleSubmit}>Submit</button>
+        { !isPending && <button onClick={handleSubmit}>Submit</button>}
+        { isPending && <button disabled>Addind recipe ...</button>}
       </div>
     </>
   );

@@ -1,0 +1,55 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "recipeName": "Chicken Curry",
+      "recipePicture": "Oil, Chicken, onion,",
+      "ingredients": "kjhslijlilijoiroihnnkgfjoiuhrt.lbmihoitp'zdoihjip",
+      "instructions": " mix",
+      "category": "breackfast",
+      "preparationTime": "25",
+      "cookingTime": "23",
+      "servings": "4"
+    },
+    {
+      "id": "2",
+      "recipeName": "Chicken Curry",
+      "recipePicture": "Oil, Chicken, onion,",
+      "ingredients": "kjhslijlilijoiroihnnkgfjoiuhrt.lbmihoitp'zdoihjip",
+      "instructions": " mix",
+      "category": "breackfast",
+      "preparationTime": "25",
+      "cookingTime": "23",
+      "servings": "4"
+    },
+    {
+      "id": "3",
+      "recipeName": "Chicken Curry",
+      "recipePicture": "Oil, Chicken, onion,",
+      "ingredients": "kjhslijlilijoiroihnnkgfjoiuhrt.lbmihoitp'zdoihjip",
+      "instructions": " mix",
+      "category": "breackfast",
+      "preparationTime": "25",
+      "cookingTime": "23",
+      "servings": "4"
+    },
+    {
+      "id": "b88b",
+      "recipes": {
+        "recipeName": "gfh",
+        "recipePicture": "gfh",
+        "ingredients": "gh",
+        "instructions": "hg",
+        "category": {
+          "dessert": "dessert",
+          "breakfast": "",
+          "lunch": "",
+          "dinner": ""
+        },
+        "preparationTime": "gf",
+        "cookingTime": "gh",
+        "savings": "gh"
+      }
+    }
+  ]
+}
